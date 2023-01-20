@@ -1,0 +1,163 @@
+.linkReturn {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.PageDetails h1 {
+  text-align: center;
+  margin-top: 1rem;
+  color: #171d3a;
+}
+
+.buttonsAddOrDelete {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.8rem;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+.buttonsAddOrDelete button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.5s;
+}
+.buttonsAddOrDelete button:hover {
+  transform: scale(1.3);
+}
+
+.showModalContent {
+  background-color: rgba(24, 24, 24, 0.308);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.containerModal {
+  width: 50%;
+  min-width: 250px;
+  max-width: 600px;
+  margin: 8rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalContainerBtnsTypeContents {
+  display: flex;
+}
+
+.btnModal {
+  width: 100%;
+  border: none;
+  padding: 0.5rem 0;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btnModal:hover {
+  background-color: #435792 !important;
+}
+
+.btnModal:first-of-type {
+  border-radius: 10px 0px 0px 0px;
+}
+.btnModal:last-of-type {
+  border-radius: 0px 10px 0px 0px;
+}
+
+.containerModal textarea {
+  resize: none;
+  outline: none;
+  font-size: 1.6rem;
+  border: none;
+  padding: 0.3rem 0.6rem;
+}
+
+.bntsModalAddCancell {
+  display: flex;
+}
+.bntsModalAddCancell button {
+  background-color: #435792;
+  color: white;
+  padding: 0.6rem 0;
+  border: none;
+  width: 100%;
+}
+.bntsModalAddCancell button:hover {
+  background-color: #7898e4;
+}
+.bntsModalAddCancell button:first-of-type {
+  border-radius: 0 0 0 10px;
+}
+.bntsModalAddCancell button:last-of-type {
+  border-radius: 0 0 10px 0;
+}
+
+.contentPrincipal {
+  margin: 0 auto;
+  width: 70%;
+  max-width: 600px;
+  padding-bottom: 2rem;
+}
+.contentPrincipal h2 {
+  text-align: center;
+  /* color: white; */
+  color: #171d3a;
+  margin: 0.8rem 0;
+}
+.contentPrincipal h2::first-letter {
+  text-transform: uppercase;
+}
+
+.contentPrincipal p {
+  color: #171d3a;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  margin: 0.8rem 0;
+  overflow: hidden;
+}
+.contentPrincipal p::first-letter {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+}
+
+.contentPrincipal ul {
+  color: #171d3a;
+  margin-left: 1.3rem;
+  font-size: 1.2rem;
+}
+
+.btnDeleteContent {
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-left: 0.6rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 400px) {
+  .linkReturn {
+    font-size: 1.5rem;
+  }
+
+  .PageDetails h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .contentPrincipal {
+    width: 90%;
+  }
+}
